@@ -2,6 +2,11 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
+# TODO: fix the floating point errors introduced
+# due to addition of small numbers when step size is reduced:
+# Try using kahan algorithm or figure out the problem by doing addition of
+# numbers on python kernel
+
 
 def probability_n_users(n: int, k: int, p: float) -> float:
     '''
